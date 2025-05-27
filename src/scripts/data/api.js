@@ -79,6 +79,7 @@ export async function getAllReports() {
     headers: { Authorization: `Bearer ${accessToken}` },
   });
   const json = await fetchResponse.json();
+  console.log(json);
 
   return {
     ...json,
